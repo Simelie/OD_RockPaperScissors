@@ -13,7 +13,6 @@ function playerSelection(){
 }
 
 function singleRound(computerSelection, playerSelection){
-    //BUG A CORRIGER
     if (computerSelection.toUpperCase() === playerSelection.toUpperCase()) return `Equality!`;
     if (computerSelection === 'Rock' && playerSelection !== 'PAPER') return `You Lose! Rock beats ${playerSelection}`; 
     if (computerSelection === 'Paper' && playerSelection !== 'SCISSORS') return `You Lose! Paper beats ${playerSelection}`; 
@@ -37,6 +36,4 @@ function game(){
     if (cptComputer > cptUser) console.log(`You LOSE the game!!! ${cptUser} - ${cptComputer}`);
     else console.log("Equality");
 }
-
-
 game();
